@@ -1,4 +1,4 @@
-# Day 4: Python Libraries: NumPy, Pandas, Student Performance Analysis
+# Day 4: Python Libraries: NumPy, Pandas & Student Performance Analysis
 
 ## 🧠 Technical Takeaways: NumPy Fundamentals
 During today's session, I transitioned from using standard Python lists to leveraging **NumPy (Numerical Python)**, the core framework for scientific computing in AI and Machine Learning.

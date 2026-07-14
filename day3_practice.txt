@@ -1,0 +1,3 @@
+This is my task for Day3.
+Which is about File Handling.
+I am coding in Python.
