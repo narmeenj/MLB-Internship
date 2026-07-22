@@ -13,7 +13,7 @@ model =Sequential()
 model.add(Input(shape=(4,)))
 
 #hidden layer
-model.add(Dense(units=50,activation='relu', name='Hidden_Layer'))
+model.add(Dense(units=16,activation='relu', name='Hidden_Layer'))
 
 #output layer
 model.add(Dense(units=1,activation='sigmoid', name='Output_Layer'))
