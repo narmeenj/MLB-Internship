@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns 
 
-data=pd.read_csv('Day5\student_performance.csv')
+data=pd.read_csv('Day5/practice_tasks/student_performance.csv')
 
 subjects=['English','Mathematics','Statistics','Database','Python','Machine_Learning']
 for i in subjects:
@@ -28,4 +28,4 @@ def givePerformance(score):
     
 data['Performance']=data['Average_Score'].apply(givePerformance)    
 
-data.to_csv("Day5/cleaned_student_performance.csv",index=False)          
+data.to_csv("Day5/practice_tasks/cleaned_student_performance.csv",index=False)          
