@@ -59,7 +59,7 @@ plt.close()
 #Box Plot
 plt.figure(figsize=(10,5))
 sns.boxplot(data=data[update_subjects],palette='Set3')
-plt.title('Spread of Marks Acroos All Subjects')
+plt.title('Spread of Marks Across All Subjects')
 plt.ylabel('Marks Distribution')
 plt.xticks(rotation=15)
 plt.tight_layout()
