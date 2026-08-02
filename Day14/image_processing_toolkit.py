@@ -10,7 +10,7 @@ import toolkit
 
 MY_NAME = "Narmeen Javed"
 
-MENU = """
+MENU = """0
 ==================== IMAGE PROCESSING TOOLKIT ====================
  1. Load an image (shows height/width/channels/file size)
  2. Convert to grayscale
