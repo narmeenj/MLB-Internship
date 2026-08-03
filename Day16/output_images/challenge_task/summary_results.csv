@@ -1,0 +1,11 @@
+image,canny_low,canny_high,quadrilateral_found,scanned_output_saved
+10_letter.jpeg,75,151,False,True
+1_straight_doc.jpeg,107,216,True,True
+2_tilted_doc.jpeg,75,151,True,True
+3_blurry_doc.jpeg,118,239,True,True
+4_doc.jpeg,135,255,True,True
+5_left_bend.jpeg,85,171,False,True
+6_right_bend.jpeg,130,255,True,True
+7_uneven_light.jpeg,124,251,False,True
+8_light_blocked.jpeg,89,180,True,True
+9_tilted_id.jpeg,102,206,False,True
