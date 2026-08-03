@@ -1,8 +1,11 @@
 import os
+import warnings
 import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 from sklearn.datasets import load_iris
 from sklearn.decomposition import PCA
+
+warnings.filterwarnings("ignore", category=UserWarning, module="sklearn")
 
 os.makedirs("Day9", exist_ok=True)
 
@@ -29,7 +32,8 @@ axes[0].legend()
 axes[0].grid(True, alpha=0.3)
 
 for i in range(optimal_k):
-    axes[1].scatter(X[y_clusters == i, 0], X[y_clusters == i, 1], label=f"Cluster {i+1}", color=colors[i], alpha=0.8, edgecolors="k")
+    label_text = "Cluster " + str(i + 1)
+    axes[1].scatter(X[y_clusters == i, 0], X[y_clusters == i, 1], label=label_text, color=colors[i], alpha=0.8, edgecolors="k")
 centroids = kmeans.cluster_centers_
 axes[1].scatter(centroids[:, 0], centroids[:, 1], s=250, c="yellow", marker="*", edgecolors="black", label="Centroids")
 axes[1].set_title("K-Means Discovered Boundaries", fontweight="bold")
@@ -39,7 +43,8 @@ axes[1].legend()
 axes[1].grid(True, alpha=0.3)
 
 for i in range(optimal_k):
-    axes[2].scatter(X_pca[y_clusters == i, 0], X_pca[y_clusters == i, 1], label=f"Cluster {i+1}", color=colors[i], alpha=0.8, edgecolors="k")
+    label_text = "Cluster " + str(i + 1)
+    axes[2].scatter(X_pca[y_clusters == i, 0], X_pca[y_clusters == i, 1], label=label_text, color=colors[i], alpha=0.8, edgecolors="k")
 axes[2].set_title("PCA Maximized Variance Projection (2D Space)", fontweight="bold")
 axes[2].set_xlabel("Principal Component 1")
 axes[2].set_ylabel("Principal Component 2")
@@ -51,4 +56,5 @@ plt.savefig("Day9/iris_clustering_analysis.png", dpi=300)
 plt.savefig("iris_clustering_analysis.png", dpi=300)
 plt.close()
 
-print("[Pipeline Engine] Unified subplots exported cleanly to folder asset structures.")
+print()
+print("Graph exported as 'iris_clustering_analysis.png'.\n")

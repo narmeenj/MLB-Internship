@@ -1,10 +1,13 @@
+import warnings
 import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 from sklearn.datasets import load_iris
 
-print("__________________________________________________")
+warnings.filterwarnings("ignore", category=UserWarning, module="sklearn")
+
+print("\n--------------------------------------------------")
 print("         K-means optimization Clustering          ")
-print("__________________________________________________")
+print("--------------------------------------------------")
 
 iris = load_iris()
 X = iris.data
@@ -27,7 +30,7 @@ plt.xticks(k_range)
 plt.grid(True, linestyle="--", alpha=0.6)
 plt.tight_layout()
 
-plt.savefig("elbow_method.png", dpi=300)
+plt.savefig("Day9/PracticeTasks/elbow_method.png", dpi=300)
 plt.close()
 
-print("\nSuccessfully saved high-DPI artifact: elbow_method.png")
+print("\nSuccessfully saved high-DPI artifact: elbow_method.png\n")
