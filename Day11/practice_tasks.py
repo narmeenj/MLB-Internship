@@ -4,8 +4,8 @@ import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
 
-fashion_mnist=keras.datasets.fashion_mnsit
-(X_train_images, y_train_labels), (X_test_images, y_test_labels)=fashion_mnist.load_data()
+fashion_mnist=keras.datasets.fashion_mnist
+(train_images, train_labels), (test_images,test_labels)=fashion_mnist.load_data()
 
 
 class_names=[
