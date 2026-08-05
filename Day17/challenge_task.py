@@ -51,6 +51,7 @@ def run_challenge():
             print(f"Error processing {filename}: {str(e)}")
 
     print("Batch processing complete.")
+    print()
 
 
 if __name__ == "__main__":
